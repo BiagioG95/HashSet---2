@@ -11,7 +11,7 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) {
 
-        Set<String> oggetti = new HashSet<String>(Arrays.asList("1","2","3"));
+        HashSet<String> oggetti = creazioneSet();
 
         String newOggetto = "4";
 
@@ -22,6 +22,18 @@ public class Main {
         } else {
             System.out.println("L'elemento '" + newOggetto + "' non è presente nel set.");
         }
+
+        oggetti.clear();
+
+    }
+    public static HashSet<String> creazioneSet(){
+        HashSet<String> oggetti = new HashSet<>();
+
+        oggetti.add("1");
+        oggetti.add("2");
+        oggetti.add("3");
+
+        return oggetti;
 
     }
 
